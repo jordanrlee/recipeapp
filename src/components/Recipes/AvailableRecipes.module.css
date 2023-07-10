@@ -1,0 +1,48 @@
+.recipes {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.recipes button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #8a2b06;
+  background-color: #8a2b06;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 25px;
+  margin: 0 1rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px white;
+  transition: all 0.3s ease-out;
+}
+
+
+.recipes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.RecipesLoading {
+  text-align: center;
+  color: white;
+}
+.RecipesError {
+  text-align: center;
+  color: red;
+}
+
+@keyframes recipes-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
